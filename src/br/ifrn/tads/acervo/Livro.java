@@ -52,5 +52,10 @@ public class Livro extends ItemAcervo{
 	public void setQuantidade(int quantidade) {
 		this.quantidade = quantidade;
 	}
-	
+	@Override
+	public String toString(){
+		return "----------------\n----------------\nTitulo: " + this.titulo + "\n"+"Autor: " + this.autor + 
+												  "\n" + "ISBN: "+ this.isbn + "\n"+"Edicao: " +this.edicao+
+												  	"\n"+ "Quantidade: " + this.quantidade +"\n"+ super.toString();
+	}
 }

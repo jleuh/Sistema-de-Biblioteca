@@ -38,6 +38,9 @@ public class Apostila extends ItemAcervo{
 		this.quantidade = quantidade;
 	}
 	
-	
+	@Override
+	public String toString(){
+		return "----------------\n----------------\nTitulo: " + this.titulo + "\n"+"Autor: " + this.autor + "\n" + super.toString();
+	}
 	
 }
