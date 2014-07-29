@@ -27,6 +27,9 @@ public class ItemAcervo {
 				
 	}
 
+	public void alugar(){
+		
+	}
 	public double getCusto() {
 		return custo;
 	}
