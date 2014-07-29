@@ -1,12 +1,26 @@
 package br.ifrn.tads.acervo;
 
-public class Livro {
+import java.util.Date;
+
+public class Livro extends ItemAcervo{
 	
 	private String titulo;
 	private String autor;
 	private String isbn;
 	private int edicao;
 	private int quantidade;
+	
+	public Livro(){
+		
+	}
+	public Livro(double custo, int codigoItem, boolean pago, Date data,String titulo, String autor, String isbn, int edicao, int quantidade){
+		super(custo, codigoItem, pago, data);
+		this.titulo = titulo;
+		this.autor = autor;
+		this.isbn = isbn;
+		this.edicao = edicao;
+		this.quantidade = quantidade;
+	}
 	
 	public String getTitulo() {
 		return titulo;
